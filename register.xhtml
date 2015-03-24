@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
             <title>Jeopardy</title>
 
-            <link href="../css/style.css" type="text/css" rel="stylesheet" />
+            <!-- <link href="../css/style.css" type="text/css" rel="stylesheet" /> -->
     </head>
     <body>
     <div id="header"> </div>
@@ -12,15 +13,15 @@
 			 <fieldset>
 			 	<legend><h2>Persönliche Daten</h2></legend>
 				<label>Vorname:</label>
-				<input type="text" id="firstName" name="firstName" >
+				<input type="text" id="firstName" name="firstName" />
 				<label>Nachname:</label>
-				<input type="text" id="surname" name="surname" >
+				<input type="text" id="surname" name="surname" />
 				<label>Geburtstag:</label>
-				<input type="date" id="birthday" name="birthday" > <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
+				<input type="date" id="birthday" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
 				<label>Geschlecht:</label>
 				<span class="sex">
-				<input type="radio" name="sex" value="male" checked>M&auml;nnlich
-				<input type="radio" name="sex" value="female">Weiblich
+				<input type="radio" name="sex" value="male" checked="checked">Maennlich</input>
+				<input type="radio" name="sex" value="female">Weiblich</input>
 				</span>
 			</fieldset>
 
@@ -28,14 +29,14 @@
 			<fieldset>
 				<legend><h2>Spielerdaten</h2></legend>
 				<label>Avatar:</label>
-				<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian">
+				<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" />
 				<label>Benutzername*:</label>
-				<input type="text" id="username" name="username" placeholder="" pattern="{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required >
+				<input type="text" id="username" name="username" placeholder="" pattern="{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" />
 				<label>Passwort*:</label>
-				<input type="password" id="password" name="password" placeholder="" pattern="{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required >
+				<input type="password" id="password" name="password" placeholder="" pattern="{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" />
 
-			<input type="submit" formnovalidate value="Registrieren">
+				<input type="submit" formnovalidate="formnovalidate" value="Registrieren" />
+			</fieldset>
 		</form>
     </body>
-    
 </html>
