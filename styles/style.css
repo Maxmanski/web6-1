@@ -1,0 +1,89 @@
+
+/* general styles */
+body{
+	background-color:#EAEBF4;
+	  font-family: Helvetica, Arial, sans-serif;
+	  font-size:1.2em;
+}
+
+h2{
+	color:#0054A6;
+	font-size:1.25em;
+}
+:invalid {
+  /*border: 2px solid #ff0000;*/
+}
+
+/* header */
+#header{
+	width:100%;
+	background-color:#304588;
+	height:50px;
+	margin-top:0px;
+	color:white;
+}
+
+/* form styles */
+form {
+  width:500px;
+  margin: 20px auto;
+}
+label{
+	display:block;
+}
+input {
+
+  border:1px solid black;
+ font-size:20px;
+  min-height:30px;
+ display:block;
+  margin-bottom:15px;
+  margin-top:5px;
+  outline: none;
+
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+fieldset{
+	border:none;
+}
+input[type=radio] {
+	display:inline;
+}
+input[type=submit] {
+  background-color:#C9C9C9;
+  padding:10px;
+  color:white;
+}
+
+
+/* media queries for diefferent displays */
+@media only screen and (min-width:960px){
+    /* styles for browsers larger than 960px; */
+    .container{
+		width:300px;
+	}
+}
+@media only screen and (min-width:1440px){
+    /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width:2000px){
+    /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width:480px){
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+@media only screen and (device-width:768px){
+    /* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+}
