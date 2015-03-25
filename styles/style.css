@@ -10,12 +10,14 @@ h2{
 	color:#0054A6;
 	font-size:1.25em;
 }
+
 :invalid {
   /*border: 2px solid #ff0000;*/
 }
 
+
 /* header */
-#header, header{
+header{
 	width:100%;
 	background-color:#304588;
 	height:50px;
@@ -23,20 +25,69 @@ h2{
 	color:white;
 }
 
+footer{
+	width:100%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#loginButton{
+	background-color:orange;
+	color:white;
+	border-radius:0px;
+}
+
+.inputblock{
+	display:block;
+	width:100%;
+	float:left;
+}
+
+.inputblock input{
+	float:right;
+}
+
+.inputblock label{
+	display:block;
+	float:left;
+}
+
+.sex{
+	float:left;
+}
+
+.sex label{
+	float:left;
+}
+
+.sex input{
+	float:right;
+}
+
+.sexinput{
+	
+}
+
+fieldset input[type=submit]{
+	float:right;
+}
+
 /* form styles */
 form {
   width:500px;
   margin: 20px auto;
 }
+
 label{
 	display:block;
 }
-input {
 
+input {
   border:1px solid black;
- font-size:20px;
+  font-size:20px;
   min-height:30px;
- display:block;
+  display:block;
   margin-bottom:15px;
   margin-top:5px;
   outline: none;
@@ -47,12 +98,15 @@ input {
   -ms-border-radius:5px;
   border-radius:5px;
 }
+
 fieldset{
 	border:none;
 }
+
 input[type=radio] {
 	display:inline;
 }
+
 input[type=submit] {
   background-color:#C9C9C9;
   padding:10px;

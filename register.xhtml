@@ -8,46 +8,84 @@
             <link href="styles/style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-    <div id="header">
-    	PIC Jeopardy<input type="button" value="Anmelden" />
-    </div>
+    <header>
+    	<div>
+			<img id="links" src="img/big-logo-small.png"/>
+			Jeopardy!
+			<input id="loginButton" type="button" value="Anmelden" />
+    	</div>
+    </header>
 		<form>
 			 <fieldset>
 			 	<legend><h2>Pers&#246;nliche Daten</h2></legend>
 			 	
-				<label for="firstName">Vorname:</label>
-				<input type="text" id="firstName" name="firstName" />
+			 	<div class="row">
+					<div class="col-md-1">
+						
+					</div>
+			 	</div>
+			 	
+			 	<div class="row">
+					<div class="col-md-1">
+						
+					</div>
+			 	</div>
+			 	
+			 	<div class="inputblock">
+					<label for="firstName">Vorname:</label>
+					<input type="text" id="firstName" name="firstName" />
+				</div>
 				
-				<label for="surName">Nachname:</label>
-				<input type="text" id="surName" name="surName" />
+				<div class="inputblock">
+					<label for="surName">Nachname:</label>
+					<input type="text" id="surName" name="surName" />
+				</div>
 				
-				<label for="birthday">Geburtstag:</label>
-				<input type="date" id="birthday" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
+				<div class="inputblock">
+					<label for="birthday">Geburtstag:</label>
+					<input type="date" id="birthday" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
+				</div>
 				
-				<label for="sex">Geschlecht:</label>
-				<span class="sex">
-					<input type="radio" name="sex" value="male" checked="checked" />
-					<label for="male">M&#228;nnlich</label>
-					<input type="radio" name="sex" value="female"/>
-					<label for="female">Weiblich</label>
-				</span>
+				<div class="inputblock">
+					<label for="sex">Geschlecht:</label>
+					<div class="sex">
+						<div class="sexinput">
+							<input type="radio" name="sex" id="male" value="male" checked="checked" />
+							<label for="male">M&#228;nnlich</label>
+						</div>
+						<div class="sexinput">
+							<input type="radio" name="sex" id="female" value="female"/>
+							<label for="female">Weiblich</label>
+						</div>
+					</div>
+				</div>
 			</fieldset>
 
 			<br />
 			<fieldset>
 				<legend><h2>Spielerdaten</h2></legend>
 				
-				<label for="avatar">Avatar:</label>
-				<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" />
+				<div class="inputblock">
+					<label for="avatar">Avatar:</label>
+					<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" />
+				</div>
 				
-				<label for="username">Benutzername*:</label>
-				<input type="text" id="username" name="username" placeholder="" pattern="{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+				<div class="inputblock">
+					<label for="username">Benutzername*:</label>
+					<input type="text" id="username" name="username" placeholder="" pattern="{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+				</div>
 				
-				<label for="password">Passwort*:</label>
-				<input type="password" id="password" name="password" placeholder="" pattern="{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" />
-
+				<div class="inputblock">
+					<label for="password">Passwort*:</label>
+					<input type="password" id="password" name="password" placeholder="" pattern="{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+				</div>
+				
 				<input type="submit" formnovalidate="formnovalidate" value="Registrieren" />
 			</fieldset>
+			Mit "*" gekennzeichnete Felder sind Pflichtfelder.
 		</form>
+		<footer>
+			&#169; 2015 BIG Jeopardy
+		</footer>
     </body>
 </html>
