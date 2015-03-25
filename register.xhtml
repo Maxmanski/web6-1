@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
             <title>Jeopardy</title>
 
+            <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
             <link href="styles/style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
@@ -20,45 +21,50 @@
 			 	<legend><h2>Pers&#246;nliche Daten</h2></legend>
 			 	
 			 	<div class="row">
-					<div class="col-md-1">
-						
+					<div class="col-md-6">
+						<label for="firstName">Vorname:</label>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="firstName" name="firstName" />
 					</div>
 			 	</div>
 			 	
 			 	<div class="row">
-					<div class="col-md-1">
-						
+					<div class="col-md-6">
+						<label for="surName">Nachname:</label>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="surName" name="surName" />
 					</div>
 			 	</div>
 			 	
-			 	<div class="inputblock">
-					<label for="firstName">Vorname:</label>
-					<input type="text" id="firstName" name="firstName" />
-				</div>
-				
-				<div class="inputblock">
-					<label for="surName">Nachname:</label>
-					<input type="text" id="surName" name="surName" />
-				</div>
-				
-				<div class="inputblock">
-					<label for="birthday">Geburtstag:</label>
-					<input type="date" id="birthday" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
-				</div>
-				
-				<div class="inputblock">
-					<label for="sex">Geschlecht:</label>
-					<div class="sex">
-						<div class="sexinput">
-							<input type="radio" name="sex" id="male" value="male" checked="checked" />
-							<label for="male">M&#228;nnlich</label>
-						</div>
-						<div class="sexinput">
-							<input type="radio" name="sex" id="female" value="female"/>
-							<label for="female">Weiblich</label>
+			 	<div class="row">
+					<div class="col-md-6">
+						<label for="birthday">Geburtstag:</label>
+					</div>
+					<div class="col-md-6">
+						<input type="date" id="birthday" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
+					</div>
+			 	</div>
+			 	
+			 	<div class="row">
+					<div class="col-md-6">
+						<label for="sex">Geschlecht:</label>
+					</div>
+					<div class="col-md-6">
+						<div class="sex">
+							<div class="sexinput">
+								<input type="radio" name="sex" id="male" value="male" checked="checked" />
+								<label for="male">M&#228;nnlich</label>
+							</div>
+							<div class="sexinput">
+								<input type="radio" name="sex" id="female" value="female"/>
+								<label for="female">Weiblich</label>
+							</div>
 						</div>
 					</div>
-				</div>
+			 	</div>
+			 	
 			</fieldset>
 
 			<br />
