@@ -57,8 +57,12 @@ input[type=submit] {
   background-color:#C9C9C9;
   padding:10px;
   color:white;
+  float:right;
 }
 
+.sex{
+	display:inline;
+}
 
 /* media queries for diefferent displays */
 @media only screen and (min-width:960px){
