@@ -53,14 +53,10 @@
 					</div>
 					<div class="col-md-6">
 						<div class="sex">
-							<div class="sexinput">
-								<input type="radio" name="sex" id="male" value="male" checked="checked" />
-								<label for="male">M&#228;nnlich</label>
-							</div>
-							<div class="sexinput">
-								<input type="radio" name="sex" id="female" value="female"/>
-								<label for="female">Weiblich</label>
-							</div>
+							<input type="radio" name="sex" id="male" value="male" checked="checked" />
+							<label for="male">M&#228;nnlich</label>
+							<input type="radio" name="sex" id="female" value="female"/>
+							<label for="female">Weiblich</label>
 						</div>
 					</div>
 			 	</div>
@@ -70,23 +66,40 @@
 			<br />
 			<fieldset>
 				<legend><h2>Spielerdaten</h2></legend>
-				
-				<div class="inputblock">
-					<label for="avatar">Avatar:</label>
-					<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" />
-				</div>
-				
-				<div class="inputblock">
-					<label for="username">Benutzername*:</label>
-					<input type="text" id="username" name="username" placeholder="" pattern="{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" />
-				</div>
-				
-				<div class="inputblock">
-					<label for="password">Passwort*:</label>
-					<input type="password" id="password" name="password" placeholder="" pattern="{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" />
-				</div>
-				
-				<input type="submit" formnovalidate="formnovalidate" value="Registrieren" />
+				<div class="row">
+					<div class="col-md-6">
+						<label for="avatar">Avatar:</label>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" />
+					</div>
+			 	</div>
+			 	
+			 	<div class="row">
+					<div class="col-md-6">
+						<label for="username">Benutzername*:</label>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="username" name="username" placeholder="" pattern="{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+					</div>
+			 	</div>
+			 	
+			 	<div class="row">
+					<div class="col-md-6">
+						<label for="password">Passwort*:</label>
+					</div>
+					<div class="col-md-6">
+						<input type="password" id="password" name="password" placeholder="" pattern="{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+					</div>
+			 	</div>
+			 	
+			 	<div class="row">
+					<div class="col-md-6">
+					</div>
+					<div class="col-md-6">
+						<input type="submit" formnovalidate="formnovalidate" value="Registrieren" />
+					</div>
+			 	</div>
 			</fieldset>
 			Mit "*" gekennzeichnete Felder sind Pflichtfelder.
 		</form>
