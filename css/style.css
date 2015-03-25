@@ -15,7 +15,7 @@ h2{
 }
 
 /* header */
-#header{
+#header, header{
 	width:100%;
 	background-color:#304588;
 	height:50px;
