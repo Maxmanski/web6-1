@@ -120,11 +120,13 @@ input{
 #fragenkatalog .price input{
   color: white;
   background-color:#304588;
+    border: 1px solid black;
 }
 #fragenkatalog .kategorie input{
     background-color: darkorange;
     color: #304588;
     display: block;
+    border: 1px solid black;
 }
 #fragenkatalog .col-md-2{
   padding-left:0px;
