@@ -1,0 +1,18 @@
+.auswertung{
+	min-width:70%;
+	max-width:70%;
+}
+
+.centr{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.black{
+	background-color:blue;
+}
+
+.full{
+	min-width:100%;
+}
