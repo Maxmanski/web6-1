@@ -2,16 +2,21 @@
 /* general styles */
 body{
 	background-color:#EAEBF4;
-	  font-family: Helvetica, Arial, sans-serif;
-	  font-size:1.2em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size:1.2em;
 }
 
 h2{
 	color:#0054A6;
 	font-size:1.25em;
 }
-:invalid {
-  /*border: 2px solid #ff0000;*/
+.right {
+  border-color:green !important;
+  color:green;
+}
+.wrong{
+    border-color:red !important;
+    color:red;
 }
 
 /* header */
@@ -74,15 +79,6 @@ form input[type=submit] {
 .column{
     display: inline-block;
 }
-#kategorie{
-    background-color: darkorange;
-    color: blue;
-    display: block;
-}
-.valueb{
-    background-color: blue;
-    color: white;
-}
 #login input{
     float: right;
     background-color: darkorange;
@@ -94,7 +90,36 @@ form input[type=submit] {
     font-size:1.2em;
     width:10em;
 }
+input{
+    color: white;
+    margin:10px 10px;
+    outline: none;
+    display:block;
+    border:1px solid black;
+    font-size:1.2em;
+    width:10em;
+}
 #links{
   float:left;
   font-size:1.8em;
+}
+#auswertung input{
+  width:100%;
+  display:block;
+  margin-top:10px;
+  border: 1px solid black;
+  background-color:#EAEBF4;
+}
+#fragenkatalog input{
+  color: white;
+  background-color:#304588;
+  margin:3px;
+  padding:3px;
+}
+.kategorie div{
+    background-color: darkorange;
+    color: #304588;
+    display: block;
+    margin:3px;
+    padding:3px;
 }
