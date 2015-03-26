@@ -5,91 +5,105 @@
         <meta name="Markus" content="WE" charset="UTF-8"/>
         <title xml:lang="en">Jeopardy</title>
         <link href="styles/style.css" type="text/css" rel="stylesheet" />
-         <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
+        <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
     </head>
+
     <body>
-    <header>
-         <div id="header">
-            <div id="links"> <img src="img/big-logo-small.png"/> Jeopardy!  </div>
-            <div id="login"><input type="button" value="Anmelden"/></div> 
-        </div> 
-    </header>
-    <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-8">
-            <section id="auswertung">
-                <span style="font-family:'Arial',Times,serif; font-size:160%">
-                <input type="button" class="right" value="Du hast richtig geantwortet: " />
-                <input type="button" class="wrong" value="Deadpool hat falsch geantwortet: " />
-                <input type="button" value="Deadpool hat TUWIEN für 1000" />
-                </span>
-            </section>
-            <section class="row">
-                <a href="#" >Fragenkatalog mit Kategorien</a>
-                <div id="fragenkatalog">
-                    <span style="font-family:'Arial',Times,serif; font-size:160%">
-						<div class="col-md-2">
-							<div class="row kategorie"><input type="button" value="TV" disabled="disabled"/></div>
-							<div class="row price"><input type="button" value="€ 100"/></div>
-							<div class="row price"><input type="button" value="€ 200"/></div>
-							<div class="row price"><input type="button" value="€ 500"/></div>
-							<div class="row price"><input type="button" value="€ 750"/></div>
-						</div>
-						<div class="col-md-2">
-							<div class="row kategorie"><input type="button" value="SSD" disabled="disabled"/></div>
-							<div class="row price"><input type="button" value="€ 100"/></div>
-							<div class="row price"><input type="button" value="€ 200"/></div>
-							<div class="row price"><input type="button" value="€ 500"/></div>
-							<div class="row price"><input type="button" value="€ 750"/></div>
-							<div class="row price"><input type="button" value="€ 1000"/></div>
-						</div>
-						<div class="col-md-2">
-							<div class="row kategorie"><input type="button" value="WEB" disabled="disabled"/></div>
-							<div class="row price"><input type="button" value="€ 100"/></div>
-							<div class="row price"><input type="button" value="€ 200"/></div>
-							<div class="row price"><input type="button" value="€ 500"/></div>
-							<div class="row price"><input type="button" value="€ 750"/></div>
-							<div class="row price"><input type="button" value="€ 1000"/></div>
-						</div>
-						<div class="col-md-2 price">
-							<div class="row kategorie"><input type="button" value="Sport" disabled="disabled"/></div>
-							<div class="row price"><input type="button" value="€ 100"/></div>
-							<div class="row price"><input type="button" value="€ 200"/></div>
-							<div class="row price"><input type="button" value="€ 500"/></div>
-							<div class="row price"><input type="button" value="€ 750"/></div>
-						</div>
-						<div class="col-md-2 price">
-							<div class="row kategorie"><input type="button" value="TUWIEN" disabled="disabled"/></div>
-							<div class="row price"><input type="button" value="€ 100"/></div>
-							<div class="row price"><input type="button" value="€ 200"/></div>
-							<div class="row price"><input type="button" value="€ 500"/></div>
-							<div class="row price"><input type="button" value="€ 750"/></div>
-							<div class="row price"><input type="button" value="€ 1000"/></div>
-						</div>
-                    </span>
-                </div>
-            </section>
+        <header>
+            <div >
+                 <div id="header">
+                    <div id="links">
+                        <img src="img/big-logo-small.png"/>
+                        Jeopardy!
+                    </div>
+                    <div id="login">
+                        <input type="button" value="Anmelden"/>
+                    </div>
+                 </div>
+            </div>
+        </header>
 
-        <article>
-            <p> Letztes Spiel: <input type="date"/> </p>
-        </article>
-        <footer>
-            <p style="text-indent:1em;">&#169; 2015 BIG Jeopardy!</p>
-        </footer>
-        </div>
-        <div class="col-md-3">
-            <div id="blackwidow">
-                <img class="avatar" src="img/avatar/black-widow_head.png"/> Black Widow €
-            </div>
-            <div id="deadpool">
-            <img class="avatar" src="img/avatar/deadpool_head.png"/> Deadpool €
-            </div>
+        <div class="centered">
             <div>
-                <h3>Fragen: counter/10</h3>
+                <div class="col-md-3 pull-right">
+                    <div class="col-md-12" id="blackwidow">
+                        <img class="avatar" src="img/avatar/black-widow_head.png"/>
+                        Black Widow €
+                    </div>
+                    <div class="col-md-12" id="deadpool">
+                        <img class="avatar" src="img/avatar/deadpool_head.png"/>
+                        Deadpool €
+                    </div>
+                    <div>
+                        <h3>Fragen: counter/10</h3>
+                    </div>
+                </div>
+                <div class="centered">
+                    <div class="col-md-9">
+                        <div class="centr">
+                            <section class="col-md-12" id="auswertung">
+                                <div class="centr">
+                                    <span class="col-md-8" style="font-family:'Arial',Times,serif; font-size:160%">
+                                        <input type="button" class="right" value="Du hast richtig geantwortet: " />
+                                        <input type="button" class="wrong" value="Deadpool hat falsch geantwortet: " />
+                                        <input type="button" value="Deadpool hat TUWIEN für 1000" />
+                                    </span>
+                                </div>
+                            </section>
+                        </div>
+                        <section id="fragenkatalog">
+                            <div class="centered" style="font-family:'Arial',Times,serif; font-size:160%;">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row kategorie"><input type="button" value="TV" disabled="disabled"/></div>
+                                    <div class="row price"><input type="button" value="€ 100"/></div>
+                                    <div class="row price"><input type="button" value="€ 200"/></div>
+                                    <div class="row price"><input type="button" value="€ 500"/></div>
+                                    <div class="row price"><input type="button" value="€ 750"/></div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row kategorie"><input type="button" value="SSD" disabled="disabled"/></div>
+                                    <div class="row price"><input type="button" value="€ 100"/></div>
+                                    <div class="row price"><input type="button" value="€ 200"/></div>
+                                    <div class="row price"><input type="button" value="€ 500"/></div>
+                                    <div class="row price"><input type="button" value="€ 750"/></div>
+                                    <div class="row price"><input type="button" value="€ 1000"/></div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row kategorie"><input type="button" value="WEB" disabled="disabled"/></div>
+                                    <div class="row price"><input type="button" value="€ 100"/></div>
+                                    <div class="row price"><input type="button" value="€ 200"/></div>
+                                    <div class="row price"><input type="button" value="€ 500"/></div>
+                                    <div class="row price"><input type="button" value="€ 750"/></div>
+                                    <div class="row price"><input type="button" value="€ 1000"/></div>
+                                </div>
+                                <div class="col-md-2 price">
+                                    <div class="row kategorie"><input type="button" value="Sport" disabled="disabled"/></div>
+                                    <div class="row price"><input type="button" value="€ 100"/></div>
+                                    <div class="row price"><input type="button" value="€ 200"/></div>
+                                    <div class="row price"><input type="button" value="€ 500"/></div>
+                                    <div class="row price"><input type="button" value="€ 750"/></div>
+                                </div>
+                                <div class="col-md-2 price">
+                                    <div class="row kategorie"><input type="button" value="TUWIEN" disabled="disabled"/></div>
+                                    <div class="row price"><input type="button" value="€ 100"/></div>
+                                    <div class="row price"><input type="button" value="€ 200"/></div>
+                                    <div class="row price"><input type="button" value="€ 500"/></div>
+                                    <div class="row price"><input type="button" value="€ 750"/></div>
+                                    <div class="row price"><input type="button" value="€ 1000"/></div>
+                                </div>
+                            </div>
+                        </section>
+                        <article>
+                            <p> Letztes Spiel: <input type="date"/> </p>
+                        </article>
+                        <footer>
+                            <p style="text-indent:1em;">&#169; 2015 BIG Jeopardy!</p>
+                        </footer>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
     </body>
 </html>

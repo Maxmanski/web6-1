@@ -19,6 +19,17 @@ h2{
     color:red;
 }
 
+.centr{
+    background-color: aqua;
+	margin-left: auto;
+    margin-right: auto;
+	float:none;
+}
+
+.black{
+    background-color: black;
+}
+
 .avatar{
 	width:100px;
 }
@@ -80,9 +91,6 @@ form input[type=submit] {
 	display:inline;
 }
 
-.column{
-    display: inline-block;
-}
 #login input{
     float: right;
     background-color: darkorange;
@@ -132,6 +140,7 @@ input{
     display: block;
     border: 1px solid black;
 }
+
 #fragenkatalog .col-md-2{
   padding-left:0px;
   padding-right:0px;
