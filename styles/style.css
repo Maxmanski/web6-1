@@ -19,7 +19,7 @@ h2{
     color:red;
 }
 
-.centr{
+.centre{
 	display:block;
 	margin-left: auto;
     margin-right: auto;
@@ -28,11 +28,16 @@ h2{
 
 .full{
 	min-width:100%;
+	min-height:3em;
 }
 
 .auswertung{
 	min-width:70%;
 	max-width:70%;
+}
+
+#auswertung{
+	margin-bottom:2em;
 }
 
 .black{
@@ -131,18 +136,26 @@ input{
   border: 1px solid black;
   background-color:#EAEBF4;
 }
+
+#fragenkatalog{
+	display:block;
+}
+
 #fragenkatalog div{
   margin:1px;
 }
+
 #fragenkatalog input{
   width:100%;
   padding:12px;
 }
+
 #fragenkatalog .price input{
   color: white;
   background-color:#304588;
     border: 1px solid black;
 }
+
 #fragenkatalog .kategorie input{
     background-color: darkorange;
     color: #304588;
