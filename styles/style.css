@@ -19,6 +19,10 @@ h2{
     color:red;
 }
 
+.avatar{
+	width:100px;
+}
+
 /* header */
 #header{
 	width:100%;
