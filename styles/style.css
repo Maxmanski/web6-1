@@ -25,8 +25,8 @@ h2{
 
 #auswertung{
   margin:0px auto;
-	min-width:80%;
-	max-width:80%;
+	min-width:90%;
+	max-width:90%;
   margin-bottom:1.3em;
 }
 
@@ -108,8 +108,9 @@ form input[type=submit] {
 }
 input{
     color: white;
-    margin:10px 10px;
+    /* margin:10px 10px;
     outline: none;
+    */
     display:block;
     border:1px solid black;
     font-size:1.2em;
@@ -119,15 +120,15 @@ input{
   float:left;
   font-size:1.8em;
 }
-#auswertung input{
+#auswertung div{
   width:100%;
-  display:block;
   margin-top:5px;
   border: 1px solid black;
   background-color:#f7f7f7;
   cursor:default;
   padding:5px;
   min-width:100%;
+  text-align: center;
   min-height:2em;
 }
 
@@ -142,19 +143,25 @@ input{
 #fragenkatalog input{
   width:100%;
   padding:12px;
+  border: 1px solid grey;
 }
 
 #fragenkatalog .price input{
   color: white;
   background-color:#304588;
-    border: 1px solid black;
 }
 
 #fragenkatalog .kategorie input{
     background-color: darkorange;
     color: black;
-    display: block;
-    border: 1px solid black;
+}
+#fragenkatalog .price input[disabled="disabled"]{
+  background-color:lightgrey;
+  color:gray;
+  border: 1px solid grey;
+}
+#fragenkatalog .highlighted input{
+  background-color:darkorange !important;
 }
 
 #fragenkatalog .col-md-2{
@@ -180,4 +187,20 @@ footer{
 }
 #deadpool .avatar{
   border: 2px solid black;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+  .avatar-col{
+      float: right !important;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
 }
