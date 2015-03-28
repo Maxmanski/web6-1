@@ -1,134 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta name="Markus" content="WE" charset="UTF-8"/>
-        <title xml:lang="en">Jeopardy</title>
-        <link href="styles/style.css" type="text/css" rel="stylesheet" />
-        <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
-    </head>
-
-    <body>
-        <header>
-             <div id="header">
-                <div id="links">
-                    <img src="img/big-logo-small.png"/>
-                    Jeopardy!
-                </div>
-                <div id="login">
-                    <input type="button" value="Anmelden"/>
-                </div>
-             </div>
-        </header>
-
-        <div class="container">
-            <div class="row">
-    			<!-- Avatare -->
-    			<div class="col-md-3">
-                    <div class="avatar-col">
-                        <div class="row">
-            				<div class="col-md-12 col-xs-6" id="blackwidow">
-                                 <div class="row">
-                                    <div class="col-md-6">
-            					       <img class="avatar" src="img/avatar/black-widow_head.png"/>
-                                    </div>
-                                    <div class="col-md-6">
-            					       <p>Black Widow (Du)</p>
-                                        <p> 2000  €</p>
-                                    </div>
-                                </div>
-            				</div>
-            				<div class="col-md-12 col-xs-6" id="deadpool">
-                                <div class="row">
-                                    <div class="col-md-6">
-            					       <img class="avatar" src="img/avatar/deadpool_head.png"/>
-                                   </div>
-                                   <div class="col-md-6">
-            					       <p> Deadpool </p>
-                                        <p> 2000  €</p>
-                                    </div>
-                                </div>
-            				</div>
-                        </div>
-        				<div class="row">
-        					<div id="counter">Fragen: counter/10</div>
-        				</div>
-                    </div>
-    			</div>
-    			
-    			<!-- Fragenteil -->
-    				<div class="col-md-9">
-    					<!-- Auswertung -->
-                        <div class="col-md-1"></div>
-    					<section class="col-md-10">
-    						<div id="auswertung">
-    								<div class="right">Du hast richtig geantwortet: </div>
-    								<div class="wrong"> Deadpool hat falsch geantwortet:</div>
-    								<div>Deadpool hat TUWIEN für 1000 </div>
-    						</div>
-    					</section>
-                        <div class="col-md-1"></div>
-    					<!-- Fragenkatalog -->
-    					<section id="fragenkatalog">
-    						<div class="row">
-                                <div class="col-md-1"></div>
-    							<div class="col-md-2">
-    								<div class="row kategorie"><input type="button" value="TV"/></div>
-    								<div class="row price"><input type="button" value="€ 100" disabled="disabled"/></div>
-    								<div class="row price"><input type="button" value="€ 200"/></div>
-    								<div class="row price"><input type="button" value="€ 500"/></div>
-    								<div class="row price"><input type="button" value="€ 750"/></div>
-    							</div>
-    							<div class="col-md-2">
-    								<div class="row kategorie"><input type="button" value="SSD" /></div>
-    								<div class="row price"><input type="button" value="€ 100"/></div>
-    								<div class="row price"><input type="button" value="€ 200"/></div>
-    								<div class="row price highlighted"><input type="button" value="€ 500"/></div>
-    								<div class="row price"><input type="button" value="€ 750"/></div>
-    								<div class="row price"><input type="button" value="€ 1000"/></div>
-    							</div>
-    							<div class="col-md-2">
-    								<div class="row kategorie"><input type="button" value="WEB" /></div>
-    								<div class="row price"><input type="button" value="€ 100"/></div>
-    								<div class="row price"><input type="button" value="€ 200"/></div>
-    								<div class="row price"><input type="button" value="€ 500" disabled="disabled"/></div>
-    								<div class="row price"><input type="button" value="€ 750"/></div>
-    								<div class="row price"><input type="button" value="€ 1000"/></div>
-    							</div>
-    							<div class="col-md-2 price">
-    								<div class="row kategorie"><input type="button" value="Sport"/></div>
-    								<div class="row price"><input type="button" value="€ 100"/></div>
-    								<div class="row price"><input type="button" value="€ 200" disabled="disabled"/></div>
-    								<div class="row price"><input type="button" value="€ 500"/></div>
-    								<div class="row price"><input type="button" value="€ 750"/></div>
-    							</div>
-    							<div class="col-md-2 price">
-    								<div class="row kategorie"><input type="button" value="TUWIEN"/></div>
-    								<div class="row price"><input type="button" value="€ 100"/></div>
-    								<div class="row price"><input type="button" value="€ 200"/></div>
-    								<div class="row price"><input type="button" value="€ 500"/></div>
-    								<div class="row price"><input type="button" value="€ 750"/></div>
-    								<div class="row price"><input type="button" value="€ 1000" disabled="disabled"/></div>
-    							</div>
-                                 <div class="col-md-1">
-                                 </div>
-    						</div>
-    					</section>
-                        <div class="row">
-                            <div class="col-md-1">
-                            </div>
-                            <div class="col-md-11">
-        					   <article>
-        					       	<p> Letztes Spiel: 22.2.2015 11:07:00 </p>
-        					   </article>
-                            </div>
-                        </div>
-    				
-                </div>
+	<head>
+		<meta name="Markus" content="WE" charset="UTF-8"/>
+		<title xml:lang="en">Jeopardy</title>
+		<link href="styles/style.css" type="text/css" rel="stylesheet" />
+		<link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<header>
+			<div id="header">
+				<div id="links">
+					<img src="img/big-logo-small.png"/>
+					Jeopardy!
+				</div>
+				<div id="login">
+					<input type="button" value="Anmelden"/>
+				</div>
 			</div>
-            <footer>
-                <p class="text-center">&#169; 2015 BIG Jeopardy!</p>
-            </footer>
-        </div>
-    </body>
+		</header>
+		
+		<div class="container">
+			<div class="row">
+				<!-- Avatare -->
+				<div class="col-md-3">
+					<div class="avatar-col">
+						<div class="row">
+							<div class="col-md-12 col-xs-6" id="blackwidow">
+								<div class="row">
+									<div class="col-md-6">
+										<img class="avatar" src="img/avatar/black-widow_head.png"/>
+									</div>
+									<div class="col-md-6">
+										<p>Black Widow (Du)</p>
+										<p> 2000  €</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xs-6" id="deadpool">
+								<div class="row">
+									<div class="col-md-6">
+										<img class="avatar" src="img/avatar/deadpool_head.png"/>
+									</div>
+									<div class="col-md-6">
+										<p> Deadpool </p>
+										<p> 2000  €</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div id="counter">Fragen: counter/10</div>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Fragenteil -->
+				<div class="col-md-9">
+
+					<!-- Auswertung -->
+					<div class="row">					
+						<div class="col-md-1"></div>
+						<section class="col-md-10">
+							<div id="auswertung">
+								<div class="right">Du hast richtig geantwortet:</div>
+								<div class="wrong">Deadpool hat falsch geantwortet:</div>
+								<div>Deadpool hat TUWIEN für 1000 </div>
+							</div>
+						</section>
+						<div class="col-md-1"></div>
+					</div>
+
+					<!-- Fragenkatalog -->
+					<section id="fragenkatalog">
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-2">
+								<div class="row kategorie"><input type="button" value="TV"/></div>
+								<div class="row price"><input type="button" value="€ 100" disabled="disabled"/></div>
+								<div class="row price"><input type="button" value="€ 200"/></div>
+								<div class="row price"><input type="button" value="€ 500"/></div>
+								<div class="row price"><input type="button" value="€ 750"/></div>
+							</div>
+							<div class="col-md-2">
+								<div class="row kategorie"><input type="button" value="SSD" /></div>
+								<div class="row price"><input type="button" value="€ 100"/></div>
+								<div class="row price"><input type="button" value="€ 200"/></div>
+								<div class="row price highlighted"><input type="button" value="€ 500"/></div>
+								<div class="row price"><input type="button" value="€ 750"/></div>
+								<div class="row price"><input type="button" value="€ 1000"/></div>
+							</div>
+							<div class="col-md-2">
+								<div class="row kategorie"><input type="button" value="WEB" /></div>
+								<div class="row price"><input type="button" value="€ 100"/></div>
+								<div class="row price"><input type="button" value="€ 200"/></div>
+								<div class="row price"><input type="button" value="€ 500" disabled="disabled"/></div>
+								<div class="row price"><input type="button" value="€ 750"/></div>
+								<div class="row price"><input type="button" value="€ 1000"/></div>
+							</div>
+							<div class="col-md-2 price">
+								<div class="row kategorie"><input type="button" value="Sport"/></div>
+								<div class="row price"><input type="button" value="€ 100"/></div>
+								<div class="row price"><input type="button" value="€ 200" disabled="disabled"/></div>
+								<div class="row price"><input type="button" value="€ 500"/></div>
+								<div class="row price"><input type="button" value="€ 750"/></div>
+							</div>
+							<div class="col-md-2 price">
+								<div class="row kategorie"><input type="button" value="TUWIEN"/></div>
+								<div class="row price"><input type="button" value="€ 100"/></div>
+								<div class="row price"><input type="button" value="€ 200"/></div>
+								<div class="row price"><input type="button" value="€ 500"/></div>
+								<div class="row price"><input type="button" value="€ 750"/></div>
+								<div class="row price"><input type="button" value="€ 1000" disabled="disabled"/></div>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="col-md-1"></div>
+
+						<div class="col-md-11">
+							<article>
+								<p> Letztes Spiel: 22.2.2015 11:07:00 </p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<p class="text-center">&#169; 2015 BIG Jeopardy!</p>
+			</footer>
+		</div>
+	</body>
 </html>
