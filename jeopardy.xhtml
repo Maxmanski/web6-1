@@ -3,6 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta name="Markus" content="WE" charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title xml:lang="en">Jeopardy</title>
 		<link href="styles/style.css" type="text/css" rel="stylesheet" />
 		<link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
@@ -24,40 +26,46 @@
 		<div class="container">
 			<div class="row">
 				<!-- Avatare -->
-				<div class="col-md-3">
-					<div class="avatar-col">
+				<div class="col-md-3 col-md-push-9">
 						<div class="row">
-							<div class="col-md-12 col-xs-6" id="blackwidow">
+							<div class="col-md-12 col-xs-6" >
 								<div class="row">
-									<div class="col-md-6">
-										<img class="avatar" src="img/avatar/black-widow_head.png"/>
-									</div>
-									<div class="col-md-6">
-										<p>Black Widow (Du)</p>
-										<p> 2000  €</p>
-									</div>
+                                    <div id="blackwidow">
+                                        <div class="col-xs-5 col-md-5">
+                                            <img class="avatar" src="img/avatar/black-widow_head.png"/>
+                                        </div>
+                                        <div class="col-xs-7 col-md-7 ">
+                                            <div class="user1Text">
+                                                Black Widow (Du)<br />
+                                                 2000  €
+                                                </div>
+                                        </div>
+                                    </div>
 								</div>
 							</div>
-							<div class="col-md-12 col-xs-6" id="deadpool">
+							<div class="col-md-12 col-xs-6">
 								<div class="row">
-									<div class="col-md-6">
-										<img class="avatar" src="img/avatar/deadpool_head.png"/>
-									</div>
-									<div class="col-md-6">
-										<p> Deadpool </p>
-										<p> 2000  €</p>
-									</div>
+                                    <div id="deadpool">
+                                        <div class="col-xs-5 col-md-5">
+                                            <img class="avatar" src="img/avatar/deadpool_head.png"/>
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="user2Text">
+                                                Deadpool <br /> 2000 €
+                                            </div>
+                        
+                                        </div>
+                                    </div>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div id="counter">Fragen: counter/10</div>
+							<div id="counter">Fragen: 2/10</div>
 						</div>
-					</div>
 				</div>
 		
 				<!-- Fragenteil -->
-				<div class="col-md-9">
+				<div class="col-md-9 col-md-pull-3">
 
 					<!-- Auswertung -->
 					<div class="row">					
@@ -133,5 +141,8 @@
 				<p class="text-center">&#169; 2015 BIG Jeopardy!</p>
 			</footer>
 		</div>
+        
+         <script src="js/jquery.js"></script>
+         <script src="js/bootstrap.js"></script>
 	</body>
 </html>
