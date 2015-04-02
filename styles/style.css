@@ -21,7 +21,7 @@ h2{
   color:green;
 }
 
-.wrong{
+.wrong, input:required:invalid, input:focus:invalid {
     border-color:red !important;
     color:red;
 }
@@ -41,11 +41,11 @@ h2{
 }
 
 #auswertung{
-    margin:0px auto;
+  margin:0px auto;
 	min-width:90%;
 	max-width:90%;
-    margin-bottom:1.3em;
-    padding: 2px;
+  margin-bottom:1.3em;
+  padding: 2px;
 }
 
 .avatar{
@@ -60,8 +60,8 @@ h2{
 	height:52px;
 	margin-top:0px;
 	color:white;
-    padding:2px;
-    font-size:0.8em;
+  padding:2px;
+  font-size:0.8em;
 }
 
 /*
@@ -114,6 +114,12 @@ form .sex label {
 }
 
 form input[type=submit] {
+  background-color:#C9C9C9;
+  padding:3px;
+  color:white;
+  max-width:10em;
+}
+form input[type=submit]{
   background-color:#C9C9C9;
   padding:3px;
   color:white;
@@ -215,6 +221,12 @@ footer{
 }
 #blackwidow .avatar{
     border: 2px solid darkorange;
+}
+#blackwidow{
+  float:left;
+}
+#deadpool{
+  float:right;
 }
 #deadpool .avatar{
    /* float:right;*/
