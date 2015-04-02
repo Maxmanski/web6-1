@@ -22,7 +22,12 @@ h2{
 }
 
 .centre{
-	margin:0px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centretext{
+  text-align: center;
 }
 
 #links{
@@ -60,7 +65,7 @@ h2{
 /* form styles */
 form {
   max-width:500px;
-  margin: 20px auto;
+  margin: 1.5em auto;
 }
 
 form label{
