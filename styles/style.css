@@ -21,7 +21,7 @@ h2{
   color:green;
 }
 
-.wrong{
+.wrong, input:required:invalid, input:focus:invalid {
     border-color:red !important;
     color:red;
 }

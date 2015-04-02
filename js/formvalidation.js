@@ -7,14 +7,18 @@ $(document).ready(function(){
 			// must validate everything via JavaScript
 			var username = $("#username").val();
 			var password = $("#password").val();
-			if(username=="" || username.length <4 || username.length >8)
+			if(username=="" || username.length <4 || username.length >8){
 				$("#username").addClass("wrong");
-			else
+				return false;
+			}else{
 				$("#username").removeClass("wrong");
-			if(password==""|| password.length <4 || password.length >8)
+			}
+			if(password==""|| password.length <4 || password.length >8){
 				$("#password").addClass("wrong");
-			else
+				return false;
+			}else{
 				$("#password").removeClass("wrong");
+			}
 		}else{
 
 			if(!hasNativeDateInput()){
@@ -27,10 +31,13 @@ $(document).ready(function(){
 				}
 			}
 		}
-		
+
+		alert("Form validation success");
 		/*var name = "You";
 		name = $("#firstName").val();
 		alert(name);*/
+
+		/* TRIGGER SUBMIT HERE*/
 		return true;
 	});
 });
