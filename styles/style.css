@@ -59,7 +59,7 @@ h2{
 
 /* form styles */
 form {
-  width:500px;
+  max-width:500px;
   margin: 20px auto;
 }
 
@@ -68,13 +68,13 @@ form label{
 }
 
 form input {
-
   border:1px solid black;
   min-height:30px;
   display:block;
   margin-bottom:15px;
   margin-top:5px;
   outline: none;
+  min-width:100%;
 
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
@@ -93,7 +93,11 @@ form fieldset{
 
 form .sex input[type=radio] {
 	display:inline;
-  margin-left:10px;
+  margin-left:0.5em;
+  margin-right:0.5em;
+  min-width:1em;
+  max-width:1em;
+  vertical-align:middle;
 }
 
 form .sex label {
@@ -104,7 +108,7 @@ form input[type=submit] {
   background-color:#C9C9C9;
   padding:3px;
   color:white;
-  width:10em;
+  max-width:10em;
 }
 
 /* Login Button */
@@ -215,8 +219,18 @@ footer{
 .user2Text{
      line-height: 1.5;
 }
+
+@media(max-width:525px){
+	form{
+		margin-left:0.5em;
+		margin-right:0.5em;
+		margin-bottom:auto;
+	}
+}
+
 @media(max-width:767px){
 }
+
 @media(min-width:768px){
     #counter{
         text-align:left;
