@@ -31,10 +31,11 @@ h2{
 }
 
 #auswertung{
-  margin:0px auto;
+    margin:0px auto;
 	min-width:90%;
 	max-width:90%;
-  margin-bottom:1.3em;
+    margin-bottom:1.3em;
+    padding: 2px;
 }
 
 .avatar{
@@ -49,8 +50,8 @@ h2{
 	height:52px;
 	margin-top:0px;
 	color:white;
-  padding:2px;
-  font-size:0.8em;
+    padding:2px;
+    font-size:0.8em;
 }
 
 /*
@@ -164,12 +165,13 @@ input{
 
 #fragenkatalog .price input{
   color: white;
-  background-color:#304588;
+  background-color:#304588;  
 }
 
 #fragenkatalog .kategorie input{
     background-color: darkorange;
-    color: black;
+    color: darkblue;
+    font-size: 130%;
 }
 #fragenkatalog .price input[disabled="disabled"]{
   background-color:lightgrey;
@@ -185,11 +187,11 @@ input{
   padding-right:0px;
 }
 footer{
-  text-align: center;
+    text-align: center;
 }
 #counter{
-  font-weight:bold;
-  margin:15px 0px;
+    font-weight:bold;
+    margin:15px 0px;
     text-align: center;
 }
 .avatar{
@@ -215,13 +217,31 @@ footer{
 .user2Text{
      line-height: 1.5;
 }
+.waehlen{
+    padding-top: 16px;
+    margin-right: 63px;
+}
+
+.waehlen input{
+    float: right;
+    padding: 4px;
+    background-color: limegreen;
+    color: white;
+    /*border: 1px solid blue;*/
+}
+.datum{
+    margin-left: 90px;
+}
+
 @media(max-width:767px){
+    #fragenkatalog .kategorie input{
+        margin-top: 13px;
+    }
 }
 @media(min-width:768px){
     #counter{
         text-align:left;
     }
-
 }
 @media(min-width:992px){}
 @media(min-width:1200px){}
