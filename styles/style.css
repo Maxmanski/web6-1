@@ -10,10 +10,12 @@ h2{
 	color:#0054A6;
 	font-size:1.25em;
 }
+
 .right {
   border-color:green !important;
   color:green;
 }
+
 .wrong{
     border-color:red !important;
     color:red;
@@ -23,6 +25,11 @@ h2{
 	margin:0px auto;
 }
 
+#links{
+  float:left;
+  font-size:1.8em;
+}
+
 #auswertung{
   margin:0px auto;
 	min-width:90%;
@@ -30,13 +37,9 @@ h2{
   margin-bottom:1.3em;
 }
 
-.black{
-    background-color: black;
-}
-
 .avatar{
 	width:100px;
-  margin-top:10px;
+    margin-top:10px;
 }
 
 /* header */
@@ -50,19 +53,25 @@ h2{
   font-size:0.8em;
 }
 
+/*
+ *    REGISTER  
+ */
+
 /* form styles */
 form {
   width:500px;
   margin: 20px auto;
 }
+
 form label{
-	display:block;
+  display:block;
 }
+
 form input {
 
   border:1px solid black;
   min-height:30px;
- display:block;
+  display:block;
   margin-bottom:15px;
   margin-top:5px;
   outline: none;
@@ -73,39 +82,45 @@ form input {
   -ms-border-radius:5px;
   border-radius:5px;
 }
+
 form fieldset{
 	border:none;
 }
+
 .sex{
   display:inline;
 }
+
 form .sex input[type=radio] {
 	display:inline;
   margin-left:10px;
 }
+
 form .sex label {
   display:inline;
 }
+
 form input[type=submit] {
   background-color:#C9C9C9;
   padding:3px;
   color:white;
-  float:right;
   width:10em;
 }
 
+/* Login Button */
 #login input{
     float: right;
     background-color: darkorange;
     color: white;
     margin:10px 10px;
-    outline: none;
+    outline:none;
     display:block;
     border:1px solid black;
     font-size:1.2em;
     width:10em;
     padding:5px;
 }
+
 input{
     color: white;
     /* margin:10px 10px;
@@ -116,10 +131,7 @@ input{
     font-size:1.2em;
     width:10em;
 }
-#links{
-  float:left;
-  font-size:1.8em;
-}
+
 #auswertung div{
   width:100%;
   margin-top:5px;
@@ -131,6 +143,10 @@ input{
   text-align: center;
   min-height:2em;
 }
+
+/*
+ *   JEOPARDY
+ */
 
 #fragenkatalog{
 	display:block;
