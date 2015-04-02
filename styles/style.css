@@ -256,12 +256,20 @@ footer{
     #fragenkatalog .kategorie input{
         margin-top: 13px;
     }
+    #deadpool{
+        float: right;
+    }
+    .user2Text{
+        float: left;
+    }
 }
 
-@media(min-width:768px){
+@media(min-width:768px){}
+
+@media(min-width:992px){
     #counter{
         text-align:left;
     }
+
 }
-@media(min-width:992px){}
 @media(min-width:1200px){}
