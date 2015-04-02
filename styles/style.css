@@ -100,13 +100,13 @@ form fieldset{
 
 form .sex input[type=radio] {
 	display:inline;
-  margin-left:0.5em;
-  margin-right:0.5em;
-  min-width:1em;
-  max-width:1em;
-  min-height:1em;
-  max-height:1em;
-  vertical-align:middle;
+    margin-left:0.5em;
+    margin-right:0.5em;
+    min-width:1em;
+    max-width:1em;
+    min-height:1em;
+    max-height:1em;
+    vertical-align:middle;
 }
 
 form .sex label {
