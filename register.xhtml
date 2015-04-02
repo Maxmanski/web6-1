@@ -9,33 +9,7 @@
             <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
 			<script src="js/jquery.js" />
 			<script src="js/framework.js" />
-			<script>
-				$(document).ready(function(){
-					$("#register").submit(function(){
-						if(!hasFormValidation()){
-							// must validate everything via JavaScript
-							
-						}else{
-							if(!hasNativeDateInput()){
-								// must validate 
-								var inDate = document.getElementById("birthday").value;
-								if(inDate.match(/^\d{1,2}.\d{1,2}.(\d{2}|\d{4})$/i) == null){
-									// did not match
-									alert("Invalid date!");
-									$("#firstName").val("Hans");
-									$("#surName").val("Schwanz");
-									return false;
-								}
-							}
-						}
-						
-						var name = "You";
-						name = $("#firstName").val();
-						alert(name);
-						return true;
-					});
-				});
-			</script>
+			<script src="js/formvalidation.js" />
     </head>
     <body>
     <header>
