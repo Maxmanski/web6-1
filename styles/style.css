@@ -37,27 +37,27 @@ h2{
 }
 
 #auswertung{
-  margin:0px auto;
+    margin: 0em auto;
 	min-width:90%;
 	max-width:90%;
-  margin-bottom:1.3em;
-  padding: 2px;
+    margin-bottom:1.3em;
+    padding: 0.5em;
 }
 
 .avatar{
-	width:100px;
-    margin-top:10px;
+	width: 3.5em;
+    margin-top: 0.4em;
 }
 
 /* header */
 #header{
-	width:100%;
-	background-color:#304588;
-	height:52px;
-	margin-top:0px;
-	color:white;
-  padding:2px;
-  font-size:0.8em;
+	width: 100%;
+	background-color: #304588;
+	height: 4em;
+	margin-top: 0em;
+	color: white;
+    padding: 0.15em;
+    font-size: 0.8em;
 }
 
 /*
@@ -66,7 +66,7 @@ h2{
 
 /* form styles */
 form {
-  max-width:500px;
+  max-width: 30em;
   margin: 1.5em auto;
 }
 
@@ -75,19 +75,19 @@ form label{
 }
 
 form input {
-  border:1px solid black;
-  min-height:30px;
-  display:block;
-  margin-bottom:15px;
-  margin-top:5px;
+  border: 0.07em solid black;
+  min-height: 1.8em;
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 0.4em;
   outline: none;
-  min-width:100%;
+  min-width: 100%;
 
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  -o-border-radius:5px;
-  -ms-border-radius:5px;
-  border-radius:5px;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.3em;
 }
 
 form fieldset{
@@ -105,25 +105,19 @@ form .sex input[type=radio] {
     vertical-align:middle;
 }
 form .sex{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0em !important;
+    margin-right: 0em !important;
 }
 
 form .sex label {
-  display:inline;
+  display: inline;
 }
 
 form input[type=submit] {
-  background-color:#C9C9C9;
-  padding:3px;
-  color:white;
-  max-width:10em;
-}
-form input[type=submit]{
-  background-color:#C9C9C9;
-  padding:3px;
-  color:white;
-  max-width:10em;
+  background-color: #C9C9C9;
+  padding: 0.3em;
+  color: white;
+  max-width: 10em;
 }
 
 /* Login Button */
@@ -131,13 +125,13 @@ form input[type=submit]{
     float: right;
     background-color: darkorange;
     color: white;
-    margin:10px 10px;
+    margin:0.5em 0.5em;
     outline:none;
     display:block;
     border:1px solid black;
     font-size:1.2em;
     width:10em;
-    padding:5px;
+    padding:0.3em;
 }
 
 input{
@@ -146,21 +140,21 @@ input{
     outline: none;
     */
     display:block;
-    border:1px solid darkgrey;
+    border: 0.1em solid darkgrey;
     font-size:1.2em;
     width:10em;
 }
 
 #auswertung div{
-  width:100%;
-  margin-top:5px;
-  border: 1px solid black;
-  background-color:#f7f7f7;
-  cursor:default;
-  padding:5px;
-  min-width:100%;
+  width: 100%;
+  margin-top: 0.1em;
+  border: 0.05em solid black;
+  background-color: #f7f7f7;
+  cursor: default;
+  padding: 0.1em;
+  min-width: 100%;
   text-align: center;
-  min-height:2em;
+  min-height: 2em;
 }
 
 /*
@@ -172,16 +166,16 @@ input{
 }
 
 #fragenkatalog div{
-  margin:1px;
+  margin:0.05em;
 }
 #fragenkatalog div.col-sm-2{
-   margin-left:0px;
-   margin-right:0px;
+   margin-left:0em;
+   margin-right:0em;
 }
 #fragenkatalog input{
   width:100%;
-  padding:12px;
-  border: 1px solid grey;
+  padding: 0.6em;
+  border: 0.05em solid grey;
 }
 
 #fragenkatalog .price input{
@@ -197,64 +191,65 @@ input{
 #fragenkatalog .price input[disabled="disabled"]{
   background-color:lightgrey;
   color:gray;
-  border: 1px solid grey;
+  border: 0.1em solid grey;
 }
 #fragenkatalog .highlighted input{
   background-color:darkorange !important;
 }
 
 #fragenkatalog .col-md-2{
-  padding-left:0px;
-  padding-right:0px;
+  padding-left:0em;
+  padding-right:0em;
 }
 footer{
     text-align: center;
 }
 #counter{
     font-weight:bold;
-    margin:15px 0px;
+    margin:1em 0em;
     text-align: center;
+    margin-left: 1em;
 }
 .avatar{
-  -webkit-border-radius:2px;
-  -moz-border-radius:2px;
-  -o-border-radius:2px;
-  -ms-border-radius:2px;
-  border-radius:2px;
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  -o-border-radius: 0.1em;
+  -ms-border-radius: 0.1em;
+  border-radius: 0.1em;
   font-size: 1.8em;
 }
 #blackwidow .avatar{
-    border: 2px solid darkorange;
+    border: 0.08em solid darkorange;
 }
 #deadpool .avatar{
-    border: 2px solid black;
+    border: 0.04em solid black;
 }
 .user1Text{
     line-height: 1.5;
-    margin-top:40px;
-    font-weight:bold;
+    margin-top: 2.5em;
+    font-weight: bold;
 }
 .user2Text{
      line-height: 1.5;
-     margin-top:40px;
+     margin-top: 2.5em;
 }
 .waehlen{
-    padding-top: 16px;
-    margin-right: 63px;
+    padding-top: 2em;
+    margin-right: 10em;
 }
 
 .waehlen input{
     background-color: limegreen;
     color: white;
     max-width:100%;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -o-border-radius:3px;
-    -ms-border-radius:3px;
-    border-radius:3px;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    border-radius: 0.3em;
 }
 .datum{
-    margin-left: 90px;
+    margin-left: 1em;
 }
 
 @media(max-width:525px){
@@ -266,7 +261,7 @@ footer{
 
 @media(max-width:767px){
     #fragenkatalog .kategorie input{
-        margin-top: 13px;
+        margin-top: 1em;
     }
 }
 
@@ -276,7 +271,7 @@ footer{
         text-align:left;
     }
     #fragenkatalog div.col-sm-2{
-      margin:0px;
+      margin:0em;
     }
 }
 @media(min-width:1200px){}
