@@ -146,7 +146,7 @@ input{
     outline: none;
     */
     display:block;
-    border:1px solid black;
+    border:1px solid darkgrey;
     font-size:1.2em;
     width:10em;
 }
@@ -174,7 +174,10 @@ input{
 #fragenkatalog div{
   margin:1px;
 }
-
+#fragenkatalog div.col-sm-2{
+   margin-left:0px;
+   margin-right:0px;
+}
 #fragenkatalog input{
   width:100%;
   padding:12px;
@@ -247,11 +250,15 @@ footer{
 }
 
 .waehlen input{
-    float: right;
-    padding: 4px;
+    /*float: right;*/
     background-color: limegreen;
     color: white;
-    /*border: 1px solid blue;*/
+    max-width:100%;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -ms-border-radius:3px;
+    border-radius:3px;
 }
 .datum{
     margin-left: 90px;
@@ -276,12 +283,15 @@ footer{
     }
 }
 
-@media(min-width:768px){}
+/*@media(min-width:768px){
+}*/
 
 @media(min-width:992px){
     #counter{
         text-align:left;
     }
-
+    #fragenkatalog div.col-sm-2{
+      margin:0px;
+    }
 }
 @media(min-width:1200px){}
