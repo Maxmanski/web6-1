@@ -1,8 +1,4 @@
 
-.sex{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
 
 /* general styles */
 body{
@@ -107,6 +103,10 @@ form .sex input[type=radio] {
     min-height:1em;
     max-height:1em;
     vertical-align:middle;
+}
+form .sex{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 form .sex label {
@@ -221,24 +221,22 @@ footer{
   -o-border-radius:2px;
   -ms-border-radius:2px;
   border-radius:2px;
+  font-size: 1.8em;
 }
 #blackwidow .avatar{
     border: 2px solid darkorange;
-}
-#blackwidow{
-
-}
-#deadpool{
-  /*float:right;*/
 }
 #deadpool .avatar{
     border: 2px solid black;
 }
 .user1Text{
     line-height: 1.5;
+    margin-top:40px;
+    font-weight:bold;
 }
 .user2Text{
      line-height: 1.5;
+     margin-top:40px;
 }
 .waehlen{
     padding-top: 16px;
@@ -246,7 +244,6 @@ footer{
 }
 
 .waehlen input{
-    /*float: right;*/
     background-color: limegreen;
     color: white;
     max-width:100%;
@@ -271,16 +268,8 @@ footer{
     #fragenkatalog .kategorie input{
         margin-top: 13px;
     }
-    #deadpool{
-        /*float: right;*/
-    }
-    .user2Text{
-        /*float: left;*/
-    }
 }
 
-/*@media(min-width:768px){
-}*/
 
 @media(min-width:992px){
     #counter{
