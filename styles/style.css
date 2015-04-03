@@ -226,17 +226,13 @@ footer{
     border: 2px solid darkorange;
 }
 #blackwidow{
-  float:left;
+
 }
 #deadpool{
-  float:right;
+  /*float:right;*/
 }
 #deadpool .avatar{
-   /* float:right;*/
     border: 2px solid black;
-}
-#deadpool{
-    /*float:right;*/
 }
 .user1Text{
     line-height: 1.5;
@@ -276,10 +272,10 @@ footer{
         margin-top: 13px;
     }
     #deadpool{
-        float: right;
+        /*float: right;*/
     }
     .user2Text{
-        float: left;
+        /*float: left;*/
     }
 }
 
