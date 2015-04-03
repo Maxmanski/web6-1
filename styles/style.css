@@ -7,11 +7,6 @@ body{
 	font-size:1.6em;
 }
 
-h2{
-	color:#0054A6;
-	font-size:1.25em;
-}
-
 .right {
   border-color:green !important;
   color:green;
@@ -89,6 +84,9 @@ form fieldset{
 form fieldset legend{
   border:none;
   margin-left:-0.9em;
+  color:#0054A6;
+  font-weight:bold;
+  font-size:1.25em;
 }
 
 form .sex input[type=radio] {
