@@ -36,13 +36,6 @@ h2{
   font-size:1.8em;
 }
 
-#auswertung{
-    margin: 0em auto;
-	min-width:90%;
-	max-width:90%;
-    margin-bottom:1.3em;
-    padding: 0.5em;
-}
 
 .avatar{
 	width: 3.5em;
@@ -93,6 +86,10 @@ form input {
 form fieldset{
 	border:none;
 }
+form fieldset legend{
+  border:none;
+  margin-left:-0.9em;
+}
 
 form .sex input[type=radio] {
 	display:inline;
@@ -136,37 +133,43 @@ form input[type=submit] {
 
 input{
     color: white;
-    /* margin:10px 10px;
-    outline: none;
-    */
     display:block;
     border: 0.1em solid darkgrey;
     font-size:1.2em;
     width:10em;
+
 }
 
-#auswertung div{
-  width: 100%;
-  margin-top: 0.1em;
-  border: 0.1em solid black;
-  background-color: #f7f7f7;
-  cursor: default;
-  padding: 0.1em;
-  min-width: 100%;
-  text-align: center;
-  min-height: 2em;
-}
+
 
 /*
  *   JEOPARDY
  */
+#auswertung{
+    margin: 1.3em auto;
+    min-width:90%;
+    max-width:90%;
+    margin-bottom:1.3em;
+    padding: 0.5em;
+}
+#auswertung div{
+  width: 100%;
+  margin-bottom: 0.5em;
+  border: 0.1em solid black;
+  background-color: #f7f7f7;
+  cursor: default;
+  padding: 0.5em;
+  min-width: 100%;
+  text-align: center;
+  min-height: 2em;
+}
 
 #fragenkatalog{
 	display:block;
 }
 
 #fragenkatalog div{
-  margin:0.05em;
+  margin:0.1em;
 }
 #fragenkatalog div.col-sm-2{
    margin-left:0em;

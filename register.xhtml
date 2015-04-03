@@ -27,7 +27,7 @@
 						<label for="firstName">Vorname:</label>
 					</div>
 					<div class="col-md-6">
-						<input type="text" id="firstName" name="firstName" />
+						<input type="text" autofocus="autofocus" tabindex="1" id="firstName" name="firstName" />
 					</div>
 			 	</div>
 			 	
@@ -36,7 +36,7 @@
 						<label for="surName">Nachname:</label>
 					</div>
 					<div class="col-md-6">
-						<input type="text" id="surName" name="surName" />
+						<input type="text" id="surName" tabindex="2" name="surName" />
 					</div>
 			 	</div>
 			 	
@@ -45,7 +45,7 @@
 						<label for="birthday">Geburtstag:</label>
 					</div>
 					<div class="col-md-6">
-						<input type="date" id="birthday" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
+						<input type="date" id="birthday" tabindex="3" name="birthday" /> <!-- pattern="\d{1,2}.\d{1,2}.\d{4}" -->
 					</div>
 			 	</div>
 			 	
@@ -56,11 +56,11 @@
 					<div class="col-md-6">
 						<div class="sex row">
 							<div class="col-md-6 col-xs-4">
-								<input type="radio" name="sex" id="male" value="male" checked="checked" />
+								<input type="radio" name="sex" id="male" value="male" checked="checked" tabindex="4" />
 								<label for="male">M&#228;nnlich</label>
 							</div>
 							<div class="col-md-6 col-xs-4">
-								<input type="radio" name="sex" id="female" value="female"/>
+								<input type="radio" name="sex" id="female" value="female" tabindex="5"/>
 								<label for="female">Weiblich</label>
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 						<label for="avatar">Avatar:</label>
 					</div>
 					<div class="col-md-6">
-						<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" />
+						<input type="text" id="avatar" name="avatar" placeholder="Aldrich Kilian" tabindex="6"/>
 					</div>
 			 	</div>
 			 	
@@ -86,7 +86,7 @@
 						<label for="username">Benutzername*:</label>
 					</div>
 					<div class="col-md-6">
-						<input type="text" id="username" name="username" placeholder="" pattern=".{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+						<input type="text" id="username" name="username" placeholder="" pattern=".{4,8}" title="Der Benutzername muss zwischen 4 und 8 Zeichen lang sein." required="required" tabindex="7"/>
 					</div>
 			 	</div>
 			 	
@@ -95,7 +95,7 @@
 						<label for="password">Passwort*:</label>
 					</div>
 					<div class="col-md-6">
-						<input type="password" id="password" name="password" placeholder="" pattern=".{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" />
+						<input type="password" id="password" name="password" placeholder="" pattern=".{4,8}" title="Das Passwort muss zwischen 4 und 8 Zeichen lang sein." required="required" tabindex="8"/>
 					</div>
 			 	</div>
 			 	
@@ -104,7 +104,7 @@
 						
 					</div>
 					<div class="col-md-6">
-						<input type="submit" formnovalidate="formnovalidate" value="Registrieren" />
+						<input type="submit" formnovalidate="formnovalidate" value="Registrieren" tabindex="9"/>
 					</div>
 			 	</div>
 			</fieldset>
