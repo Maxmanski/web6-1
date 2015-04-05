@@ -200,7 +200,7 @@ input[disabled="disabled"][type="submit"]{
     border: 0.05em solid black;
     background-color: darkorange;
     color: darkblue;
-    font-size: 130%;
+    font-size: 1.2em;
     text-align:center;
     height:2.5em;
     vertical-align:middle;
