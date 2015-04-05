@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
 	$("#register").submit(function(event){
-	event.preventDefault();
-
+    event.preventDefault();
+        
 		if(!hasFormValidation()){
 			// must validate everything via JavaScript
 			var username = $("#username").val();
