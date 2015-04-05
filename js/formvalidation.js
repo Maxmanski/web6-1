@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		
+		var newlyOpened = true;
 		$("input[type='submit']").attr("disabled", "disabled");
 		
 		// checks if the username and password are valid
@@ -24,7 +25,7 @@ $(document).ready(function(){
 		
 		// checks if the birthday is valid
 		function validateBirthday(){
-			var inDate = $("#birthday").val();
+			var inDate = getNormalizedDateString("#birthday");
 			
 			// check against regex
 			if(inDate != "" && inDate.match(/^\d{1,2}.\d{1,2}.(\d{2}|\d{4})$/i) == null){
@@ -39,11 +40,14 @@ $(document).ready(function(){
 		// checks if the form is submittable (valid)
 		// and enables/disables the submit button accordingly
 		function checkSubmittable(){
-			if(validateUserAndPassword() && validateBirthday()){
-				$("input[type='submit']").removeAttr("disabled");
-			}else{
-				$("input[type='submit']").attr("disabled", "disabled");
+			if(!newlyOpened){
+				if(validateUserAndPassword() && validateBirthday()){
+					$("input[type='submit']").removeAttr("disabled");
+				}else{
+					$("input[type='submit']").attr("disabled", "disabled");
+				}
 			}
+			newlyOpened = false;
 		}
 		
 		// set up keyUp actions for any textual input fields
