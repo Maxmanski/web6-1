@@ -91,7 +91,7 @@ form label{
   display:block;
 }
 
-form input {
+form input, form select {
   border: 0.07em solid black;
   min-height: 1.8em;
   display: block;
