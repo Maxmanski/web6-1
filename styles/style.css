@@ -12,7 +12,7 @@ body{
   color:green;
 }
 
-.wrong, input:required:invalid, input:focus:invalid {
+.wrong, input:focus:required:invalid, input:focus:invalid {
     border-color:red !important;
     color:red;
 }
@@ -37,8 +37,13 @@ body{
     margin-top: 0.4em;
 }
 
+.accept{
+    background-color: limegreen;
+    color: white;
+}
+
 /* header */
-#header{
+header{
 	width: 100%;
 	background-color: #304588;
 	height: 4em;
@@ -46,6 +51,30 @@ body{
 	color: white;
     padding: 0.15em;
     font-size: 0.8em;
+}
+
+/* Login Button */
+#login input{
+    float: right;
+    background-color: darkorange;
+    color: white;
+    margin:0.5em 0.5em;
+    outline:none;
+    display:block;
+    border: 0.01em solid black;
+    font-size:1.2em;
+    min-width:6em;
+    width:10%;
+    padding:0.3em;
+}
+
+input{
+    color: white;
+    display:block;
+    border: 0.1em solid darkgrey;
+    font-size:1.2em;
+    width:10em;
+
 }
 
 /*
@@ -81,6 +110,7 @@ form input {
 form fieldset{
 	border:none;
 }
+
 form fieldset legend{
   border:none;
   margin-left:-0.9em;
@@ -109,38 +139,13 @@ form .sex label {
 }
 
 form input[type="submit"] {
-  background-color: #C9C9C9;
-  padding: 0.3em;
-  color: white;
-  max-width: 10em;
+	padding: 0.3em;
+	max-width: 10em;
 }
 
-/* Login Button */
-#login input{
-    float: right;
-    background-color: darkorange;
-    color: white;
-    margin:0.5em 0.5em;
-    outline:none;
-    display:block;
-    border: 0.01em solid black;
-    font-size:1.2em;
-    width:10em;
-    padding:0.3em;
-}
-
-input{
-    color: white;
-    display:block;
-    border: 0.1em solid darkgrey;
-    font-size:1.2em;
-    width:10em;
-
-}
-
-input[disabled="disabled"]{
-	background-color:darkgrey !important;
-	color:lightgrey !important;
+input[disabled="disabled"][type="submit"]{
+	background-color: #C9C9C9 !important;
+	color: white !important;
 }
 
 /*
@@ -153,6 +158,7 @@ input[disabled="disabled"]{
     margin-bottom:1.3em;
     padding: 0.5em;
 }
+
 #auswertung div{
   width: 100%;
   margin-bottom: 0.5em;
@@ -187,16 +193,23 @@ input[disabled="disabled"]{
   background-color:#304588;  
 }
 
-#fragenkatalog .kategorie input{
+#fragenkatalog .kategorie{
+	border: 0.05em solid black;
     background-color: darkorange;
     color: darkblue;
     font-size: 130%;
+    text-align:center;
+    height:2.5em;
+    vertical-align:middle;
+    line-height:2.5em;
 }
+
 #fragenkatalog .price input[disabled="disabled"]{
   background-color:lightgrey;
   color:gray;
   border: 0.1em solid grey;
 }
+
 #fragenkatalog .highlighted input{
   background-color:darkorange !important;
 }
@@ -205,15 +218,18 @@ input[disabled="disabled"]{
   padding-left:0em;
   padding-right:0em;
 }
+
 footer{
     text-align: center;
 }
+
 #counter{
     font-weight:bold;
     margin:1em 0em;
     text-align: center;
     margin-left: 1em;
 }
+
 .avatar{
   -webkit-border-radius: 0.1em;
   -moz-border-radius: 0.1em;
@@ -222,30 +238,35 @@ footer{
   border-radius: 0.1em;
   font-size: 1.8em;
 }
+
 #blackwidow .avatar{
     border: 0.08em solid darkorange;
 }
+
 #deadpool .avatar{
     border: 0.04em solid black;
 }
+
 .user1Text{
     line-height: 1.5;
     margin-top: 2.5em;
     font-weight: bold;
 }
+
 .user2Text{
      line-height: 1.5;
      margin-top: 2.5em;
 }
+
 .waehlen{
     padding-top: 2em;
     margin-right: 10em;
 }
 
 .waehlen input{
-    background-color: limegreen;
-    color: white;
+	border: 0.1em solid black;
     max-width:100%;
+    height:2em;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -o-border-radius: 0.3em;
@@ -264,7 +285,7 @@ footer{
 }
 
 @media(max-width:767px){
-    #fragenkatalog .kategorie input{
+    #fragenkatalog .kategorie{
         margin-top: 1em;
     }
 }

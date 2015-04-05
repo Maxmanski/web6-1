@@ -3,16 +3,21 @@ $(document).ready(function(){
 		var newlyOpened = true;
 		$("input[type='submit']").attr("disabled", "disabled");
 		
-		// checks if the username and password are valid
-		function validateUserAndPassword(){
+		// checks if the username is valid
+		function validateUser(){
 			var username = $("#username").val();
-			var password = $("#password").val();
 			if(username=="" || username.length <4 || username.length >8){
 				$("#username").addClass("wrong");
 				return false;
 			}else{
 				$("#username").removeClass("wrong");
 			}
+			return true;
+		}
+		
+		// checks if the password is valid
+		function validatePassword(){
+			var password = $("#password").val();
 			
 			if(password==""|| password.length <4 || password.length >8){
 				$("#password").addClass("wrong");
@@ -41,7 +46,7 @@ $(document).ready(function(){
 		// and enables/disables the submit button accordingly
 		function checkSubmittable(){
 			if(!newlyOpened){
-				if(validateUserAndPassword() && validateBirthday()){
+				if(validateUser() && validatePassword() && validateBirthday()){
 					$("input[type='submit']").removeAttr("disabled");
 				}else{
 					$("input[type='submit']").attr("disabled", "disabled");
@@ -62,10 +67,32 @@ $(document).ready(function(){
 		event.preventDefault();
 			
 			if(!hasFormValidation()){
+				var usrOk, pwOk, bdOk;
 				// must validate everything via JavaScript
-				var success = validateUserAndPassword();
-				success = success && validateBirthday();
-				if(!success){
+				usrOk = validateUser();
+				pwOk = validatePassword();
+				bdOk = validateBirthday();
+				
+				if(!pwOk && !usrOk && !bdOk){
+					$("#errormsg").html("Benutzername, Passwort und Geburtstag sind nicht gueltig.");
+					return false;
+				}else if(!usrOk && !pwOk){
+					$("#errormsg").html("Benutzername und Passwort sind nicht gueltig.");
+					return false;
+				}else if(!usrOk && !bdOk){
+					$("#errormsg").html("Benutzername und Geburtstag sind nicht gueltig.");
+					return false;
+				}else if(!pwOk && !bdOk){
+					$("#errormsg").html("Passwort und Geburtstag sind nicht gueltig.");
+					return false;
+				}else if(!usrOk){
+					$("#errormsg").html("Benutzername ist nicht gueltig.");
+					return false;
+				}else if(!pwOk){
+					$("#errormsg").html("Passwort ist nicht gueltig.");
+					return false;
+				}else if(!bdOk){
+					$("#errormsg").html("Geburtstag ist nicht gueltig.");
 					return false;
 				}
 				
